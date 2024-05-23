@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Guardian Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-screen">
+            <h1>Welcome to Data Guardian Quest</h1>
+            <button id="start-button">Start Quest</button>
+        </div>
+        <div class="quest-screen" id="quest-screen" style="display: none;">
+            <h2>About Me</h2>
+            <p>Navigate through the maze to learn more about my background.</p>
+            <div class="maze-container" id="maze-container">
+                <div class="maze-cell start" id="start"></div>
+                <div class="maze-cell" id="cell-1" data-info="I have a Master's degree in Security and Applied Logic from the University of Bucharest."></div>
+                <div class="maze-cell" id="cell-2" data-info="I am a Technical Lead Senior Engineer at Infosys, spearheading e-commerce public operational websites."></div>
+                <div class="maze-cell" id="cell-3" data-info="I have over 5 years of experience in Java, Spring, and React, blending backend robustness with front-end prowess."></div>
+                <div class="maze-cell" id="cell-4" data-info="As an Agile Advocate, I champion remote pairing, pair programming, and continuous story stream in my team."></div>
+                <div class="maze-cell" id="cell-5" data-info="I guide my team in full-stack development, ensuring adherence to best coding standards, TDD, and architectural practices."></div>
+                <div class="maze-cell" id="cell-6" data-info="I have hands-on experience in cloud software development with AWS, Azure, and Google Cloud."></div>
+                <div class="maze-cell" id="cell-7" data-info="I am fluent in English and skilled in critical thinking and adaptability."></div>
+                <div class="maze-cell finish" id="finish" data-info="Congratulations! You have completed the maze."></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.welcome-screen {
+    animation: fadeIn 2s;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4757;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.quest-screen {
+    margin-top: 2rem;
+}
+
+.maze-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.maze-cell {
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    border: 2px solid #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.maze-cell:hover {
+    background-color: #555;
+}
+
+.start {
+    background-color: #6bff6b;
+}
+
+.finish {
+    background-color: #ff6b6b;
+}
+
+.maze-info {
+    display: none;
+    padding: 1rem;
+    background-color: #333;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
